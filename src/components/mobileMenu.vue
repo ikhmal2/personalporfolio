@@ -19,7 +19,7 @@
                 </ul>
                 <div class="hamburger" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
                     <span class="bar"></span>
-                    <span class="bar"></span>
+                    <span class="bar" style="width: 2rem"></span>
                     <span class="bar"></span>
                 </div>
             </nav>
@@ -33,16 +33,11 @@ export default {
         return {
             displayMenu: false
         }
-    },
-    toggle() {
-        this.displayMenu = !this.displayMenu
     }
 };
 </script>
 
 <style scoped>
-
-
     /* CSS reset */
     @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
     
@@ -53,7 +48,7 @@ export default {
     }
     
     html {
-        font-size: 62.5%;
+        font-size: 100%;
         font-family: 'Merriweather', sans-serif;
     }
     
@@ -86,9 +81,16 @@ export default {
         background-color: black;
     }
     .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        opacity: 35%;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
     }
 
     .nav-item {
@@ -98,7 +100,7 @@ export default {
     .nav-link {
         font-size: 1.6rem;
         font-weight: 400;
-        color: #475569;
+        color: white;
     }
 
     .nav-link:hover {
@@ -106,31 +108,31 @@ export default {
     }
 
     @media only screen and (max-width: 768px) {
-        .nav-menu {
-            position: fixed;
-            left: -100%;
-            top: 5rem;
-            flex-direction: column;
-            background-color: #fff;
-            width: 100%;
-            border-radius: 10px;
-            text-align: center;
-            transition: 0.3s;
-            box-shadow:
-                0 10px 27px rgba(0, 0, 0, 0.05);
-        }
+
 
         .nav-menu.active {
-            left: 0;
+            right: 0;
         }
 
         .nav-item {
-            margin: 2.5rem 0;
+            margin: .8rem 0;
         }
 
         .hamburger {
             display: block;
             cursor: pointer;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
         }
 
         .nav-logo img {
@@ -142,5 +144,44 @@ export default {
         }
     }
 
+    @media only screen and (min-width: 1200px) {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
 
+        .hamburger {
+            display: none;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: black;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin-left: 5rem;
+        }
+
+        .nav-link {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: #482ff7;
+        } 
+    }
 </style>
