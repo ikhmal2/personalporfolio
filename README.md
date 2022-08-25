@@ -24,6 +24,7 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
     Continue changing the css in mobilMenu.vue to go mobile oriented first rather than desktop oriented. Last changes made is in here
     </li>
 </ol>
+
 ```.nav-menu {
     position: fixed;
     right: -100%;
@@ -35,4 +36,21 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-}``` 
+}```
+
+```sh
+python3.8 -m venv .venv && source .venv/bin/activate # or however you like to create virtualenvs
+
+# for chapter 1
+pip install pytest 
+
+# for chapter 2
+pip install pytest sqlalchemy
+
+# for chapter 4+5
+pip install -r requirements.txt
+
+# for chapter 6+
+pip install -r requirements.txt
+pip install -e src/
+```
