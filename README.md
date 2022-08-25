@@ -25,7 +25,8 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
     </li>
 </ol>
 
-```.nav-menu {
+```
+.nav-menu {
     position: fixed;
     right: -100%;
     top: 5rem;
