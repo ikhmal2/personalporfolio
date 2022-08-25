@@ -21,20 +21,20 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
 ### TODO or Continue Doing List
 <ol>
     <li>
-    Continue changing the css in mobilMenu.vue to go mobile oriented first rather than desktop oriented. Last changes made is in here</br>
-    ```
-        .nav-menu {
-        position: fixed;
-        right: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: black;
-        opacity: 35%;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-    }
-    ``` 
+    Continue changing the css in mobilMenu.vue to go mobile oriented first rather than desktop oriented. Last changes made is in here
     </li>
 </ol>
+```
+    .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: black;
+    opacity: 35%;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+``` 
