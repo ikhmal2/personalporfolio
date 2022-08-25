@@ -24,8 +24,7 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
     Continue changing the css in mobilMenu.vue to go mobile oriented first rather than desktop oriented. Last changes made is in here
     </li>
 </ol>
-```
-    .nav-menu {
+```.nav-menu {
     position: fixed;
     right: -100%;
     top: 5rem;
@@ -36,5 +35,4 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
-}
-``` 
+}``` 
