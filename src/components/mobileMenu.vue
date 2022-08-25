@@ -6,18 +6,18 @@
                     <img src="../assets/mobile_logo.png" alt="mobile-logo">
                 </a>
 
-                <ul class="nav-menu">
+                <ul class="nav-menu" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
                     <li class="nav-item">
                         <a href="#" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Projecs</a>
+                        <a href="#" class="nav-link active">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
-                <div @click="mobileMenu" class="hamburger">
+                <div class="hamburger" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -29,7 +29,14 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            displayMenu: false
+        }
+    },
+    toggle() {
+        this.displayMenu = !this.displayMenu
+    }
 };
 </script>
 
