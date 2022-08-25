@@ -1,24 +1,17 @@
-# personalporfolio
+# Personal Portfolio
 
-## Project setup
+## Project Description
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+This project is created as a way for me to learn and practice Vue.js as well as having a personal portfolio for myself. 
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Techologies
+<ul>
+    <li>Vue 3</li>
+</ul>
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Future plans for project
+<ul>
+    <li>Stack NuxtJs</li>
+    <li>Implement CSS framework</li>
+</ul>
