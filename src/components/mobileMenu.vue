@@ -61,6 +61,14 @@ export default {
     }
     /* CSS reset ends */
 
+    .nav-logo img {
+        max-width: 4.375rem;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        padding: 5px;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -69,7 +77,20 @@ export default {
     }
 
     .hamburger {
-        display: none;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .bar {
@@ -93,8 +114,12 @@ export default {
         transition: 0.3s;
     }
 
+    .nav-menu.active {
+        right: 0;
+    }
+
     .nav-item {
-        margin-left: 5rem;
+        margin-left: .8rem 0;
     }
 
     .nav-link {
@@ -107,49 +132,21 @@ export default {
         color: #482ff7;
     }
 
-    @media only screen and (max-width: 768px) {
-
-
-        .nav-menu.active {
-            right: 0;
-        }
-
-        .nav-item {
-            margin: .8rem 0;
-        }
-
-        .hamburger {
-            display: block;
-            cursor: pointer;
-        }
-
-        .hamburger.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active .bar:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-        }
-
-        .hamburger.active .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-        }
+    @media only screen and (min-width: 1200px) {
 
         .nav-logo img {
-            max-width: 4.375rem;
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 5px;
+        max-width: unset;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 5px;
         }
-    }
 
-    @media only screen and (min-width: 1200px) {
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 1.5rem;
+            padding: 1rem 2.5rem;
         }
 
         .hamburger {
@@ -168,6 +165,16 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            top: 0;
+            position: relative;
+            right: unset;
+            width: auto;
+            text-align: unset;
+            flex-direction: unset;
+            background-color: unset;
+            opacity: unset;
+            border-radius: unset;
+            transition: unset;
         }
 
         .nav-item {
@@ -177,7 +184,7 @@ export default {
         .nav-link {
             font-size: 1.6rem;
             font-weight: 400;
-            color: white;
+            color: #25232D;
         }
 
         .nav-link:hover {
