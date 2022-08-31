@@ -106,8 +106,7 @@ export default {
         right: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: black;
-        opacity: 35%;
+        background-color: #4D4141;
         width: 100%;
         border-radius: 10px;
         text-align: center;
