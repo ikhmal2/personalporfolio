@@ -12,9 +12,9 @@
             </span>
 
             <ul class="socialLinks">
-                <li class="socialItem" v-for="(social, index) in socialCopy" v-bind:key="index">
+                <li class="socialItem" v-for="(social, index) in socialCopy" :key="index">
                     <span>
-                        <a :href="social.href" target="_blank">{{ social.copy }}</a>
+                        <a :href="'${social.href}'" target="_blank">{{ social.copy }}</a>
                     </span>
                 </li>
             </ul>
