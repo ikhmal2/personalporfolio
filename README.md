@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 ## Project Description
-This project is created as a way for me to learn and practice Vue.js as well as having a personal portfolio for myself. 
+This project is created as a way for me to learn and practice Vue.js as well as having a personal portfolio for myself. This project will be designed to focus on mobile first then desktop. Thus the desktop version will take more time to complete.
 
 ### Techologies
 <ul>
@@ -21,21 +21,16 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
 ### TODO or Continue Doing List
 <ol>
     <li>
-    Continue changing the css in mobilMenu.vue to go mobile oriented first rather than desktop oriented. Last changes made is in here
+        Try to fix links. it can get the 'social.copy' values but it can parse the 'social.href' values to be inserted in href tag
     </li>
 </ol>
 
 ```
-.nav-menu {
-    position: fixed;
-    right: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: black;
-    opacity: 35%;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-}
+<ul class="socialLinks">
+ <li class="socialItem" v-for="(social, index) in socialCopy" :key="index">
+  <span>
+    <a :href="'${social.href}'" target="_blank">{{ social.copy }}</a>
+  </span>
+ </li>
+</ul>
 ```
