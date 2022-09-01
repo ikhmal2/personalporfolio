@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 ## Project Description
-This project is created as a way for me to learn and practice Vue.js as well as having a personal portfolio for myself. 
+This project is created as a way for me to learn and practice Vue.js as well as having a personal portfolio for myself. This project will be designed to focus on mobile first then desktop. Thus the desktop version will take more time to complete.
 
 ### Techologies
 <ul>
