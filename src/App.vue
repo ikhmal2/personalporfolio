@@ -1,6 +1,7 @@
 <template>
   <mobileMenu />
   <HomepageInto />
+  <projectsHomepageVue />
 </template>
 
 <script>
@@ -12,8 +13,9 @@ export default {
   name: 'App',
   components: {
     mobileMenu,
-    HomepageInto
-}
+    HomepageInto,
+    projectsHomepageVue
+  }
 }
 </script>
 
