@@ -6,6 +6,7 @@
 <script>
 import mobileMenu from './components/mobileMenu.vue'
 import HomepageInto from './components/homepage-into.vue'
+import projectsHomepageVue from './components/projects-homepage.vue'
 
 export default {
   name: 'App',
