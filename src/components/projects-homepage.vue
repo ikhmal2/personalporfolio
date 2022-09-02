@@ -1,11 +1,13 @@
 <template>
-    <div class="project-card">
+    <div v-for="(project, id) in projects" :key="id" class="project-card">
         <img src="../assets/homepage.png" alt="portfolio-homepage">
     </div>
 </template>
 
 <script>
-
+    export default {
+        
+    }
 </script>
 
 <style scoped>
@@ -19,6 +21,6 @@
     }
 
     .project-card img {
-        
+
     }
 </style>
