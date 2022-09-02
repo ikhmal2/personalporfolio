@@ -26,11 +26,10 @@
     export default {
         data() {
             return {
-                socialCopy: 
-                [
-                    { copy: 'GH'}, {copy: 'IG'}, {copy: 'LI'}, 
-                    {href: 'https://github.com/ikhmal2'}, {href: 'https://www.instagram.com/ikhmalloy/?hl=en'},
-                    {href: 'https://www.linkedin.com/in/ikhmal-fahmi-6173031a8/'}
+                socialCopy: [
+                    {copy: 'GH', href: 'https://github.com/ikhmal2'},
+                    {copy: 'IG', href: 'https://www.instagram.com/ikhmalloy/?hl=en'},
+                    {copy: 'LI', href: 'https://www.linkedin.com/in/ikhmal-fahmi-6173031a8/'}
                 ]
             }
         }
@@ -38,7 +37,7 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');;
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
 
     .intro-section {
         display: block;
@@ -66,7 +65,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 0 0 0 80px;
+        padding: 0;
     }
 
     .socialItem {
