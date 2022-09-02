@@ -14,7 +14,7 @@
             <ul class="socialLinks">
                 <li class="socialItem" v-for="(social, index) in socialCopy" :key="index">
                     <span>
-                        <a :href="'${social.href}'" target="_blank">{{ social.copy }}</a>
+                        <a :href="social.href" target="_blank">{{ social.copy }}</a>
                     </span>
                 </li>
             </ul>
@@ -29,7 +29,8 @@
                 socialCopy: 
                 [
                     { copy: 'GH'}, {copy: 'IG'}, {copy: 'LI'}, 
-                    {href: 'https://github.com/ikhmal2'}, {href: 'https://www.instagram.com/ikhmalloy/?hl=en'}, {href: 'https://www.linkedin.com/in/ikhmal-fahmi-6173031a8/'}
+                    {href: 'https://github.com/ikhmal2'}, {href: 'https://www.instagram.com/ikhmalloy/?hl=en'},
+                    {href: 'https://www.linkedin.com/in/ikhmal-fahmi-6173031a8/'}
                 ]
             }
         }
