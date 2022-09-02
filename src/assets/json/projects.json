@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Personal Portfolio", "desc": "This portfolio is made with Vue.js and Ikhmal used Figma to design it. He planned to use Bootstrap for his CSS but there’re not a lot of components in here so he decided to just use vanilla css instead", "img": "../assets/homepage.png"},
+    {"id": 2, "name": "Honda.com.my", "desc": "The website is  made with Laravel eventhough his seniors made it, Ikhmal still updates the site when there’re new promotions or campaign comes out", "img": "../assets/honda.png"},
+    {"id": 3, "name": "AmbankSpot.com", "desc": "This website is made with Wordpress with a custom theme and custom plugin installed for it. He also use a popular web builder plugin called Elementor and used Jquery as his goto library. (yea i know its old but its easy for beginners right?)", "img": "../assets/ambankspot.png"},
+    {"id": 3, "name": "Paviliondamansaraheights.com", "desc": "It is also made with Wordpress and yes, he did used Jquery for it.  This website uses plugins such as Visual Composer (web builder), WPForm and Revolution Slider", "img": "../assets/pdh.png"}
+]
