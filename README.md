@@ -21,16 +21,16 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
 ### TODO or Continue Doing List
 <ol>
     <li>
-        Try to fix links. it can get the 'social.copy' values but it can parse the 'social.href' values to be inserted in href tag
+        will try to fix importing and accessing data from json file
     </li>
 </ol>
 
 ```
-<ul class="socialLinks">
- <li class="socialItem" v-for="(social, index) in socialCopy" :key="index">
-  <span>
-    <a :href="'${social.href}'" target="_blank">{{ social.copy }}</a>
-  </span>
- </li>
+<ul class="projects-list">
+    <li class="project-item" :for="(project, index) in projectData" :key="index">
+        <div class="project-card">
+            <h2>{{ project.title }}</h2>
+        </div>
+    </li>
 </ul>
 ```
