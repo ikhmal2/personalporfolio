@@ -3,7 +3,7 @@
     <ul class="projects-list">
         <li class="project-item" v-for="(project, index) in projects" :key="index">
             <div class="project-card">
-                <img :src="projects[index].src" alt="">
+                <img :src="projects[index].src" v-bind:alt="projects[index].title">
             </div>
         </li>
     </ul>
