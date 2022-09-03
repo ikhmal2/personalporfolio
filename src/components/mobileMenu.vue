@@ -16,6 +16,9 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resume</a>
+                    </li>
                 </ul>
                 <div class="hamburger" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
                     <span class="bar"></span>
@@ -106,11 +109,12 @@ export default {
         right: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #4D4141;
+        background-color: #FAF9F6;
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
+        opacity: 90%;
     }
 
     .nav-menu.active {
@@ -118,13 +122,13 @@ export default {
     }
 
     .nav-item {
-        margin-left: .8rem 0;
+        margin: 5px 0;
     }
 
     .nav-link {
         font-size: 1.6rem;
         font-weight: 400;
-        color: white;
+        color: #4D4141;
     }
 
     .nav-link:hover {
