@@ -1,6 +1,6 @@
 <template>
     <div class="about-container">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
             <i>Ikhmal Fahmi</i><br><br>is a
             Front-End Developer Jr. at Dentsu Isobar, MY. He is a graduate with a Diploma in Computer Science. He joined the industry in Jan 2022 .
@@ -46,9 +46,9 @@
         margin-bottom: 10px;
     }
 
-    .about-container h1 {
+    .about-container h2 {
         font-family: "Playfair Display",sans-serif;
-        font-weight: 700;
+        font-weight: 400;
         text-align: center;
     }
 
