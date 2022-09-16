@@ -5,16 +5,16 @@
             <div class="project-card" @click="displayModal=displayModal=!displayModal">
                 <img @click="display=display=!display" :src="projects[index].src" v-bind:alt="projects[index].title">
             </div>
+            <!-- Modal popup starts -->
+            <div :class="{active:display}" class="modal">
+                <div class="modal-content">
+                    <span @click="display=display=!display" class="close">&times;</span>
+                    <p>Test modal area</p>
+                </div>
+            </div>
+            <!-- Modal popup ends-->
         </li>
     </ul>
-    <!-- Modal popup starts -->
-    <div :class="{active:display}" class="modal">
-        <div class="modal-content">
-            <span @click="display=display=!display" class="close">&times;</span>
-            <p>Test modal area</p>
-        </div>
-    </div>
-    <!-- Modal popup ends-->
 </template>
 
 <script>
@@ -99,10 +99,11 @@
         display: none;
         position: fixed;
         z-index: 1;
-        left: 0;
-        top: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
         width: 100%;
-        height: 100%;
+        height: 50%;
         overflow: auto;
         background-color: rgb(0,0,0);
         background-color: rgba(0,0,0,0.4);
