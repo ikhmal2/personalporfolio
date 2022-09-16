@@ -2,11 +2,19 @@
     <span class="project-title">Projects</span>
     <ul class="projects-list">
         <li class="project-item" v-for="(project, index) in projects" :key="index">
-            <div class="project-card">
-                <img :src="projects[index].src" v-bind:alt="projects[index].title">
+            <div class="project-card" @click="displayModal=displayModal=!displayModal">
+                <img @click="display=display=!display" :src="projects[index].src" v-bind:alt="projects[index].title">
             </div>
         </li>
     </ul>
+    <!-- Modal popup starts -->
+    <div :class="{active:display}" class="modal">
+        <div class="modal-content">
+            <span @click="display=display=!display" class="close">&times;</span>
+            <p>Test modal area</p>
+        </div>
+    </div>
+    <!-- Modal popup ends-->
 </template>
 
 <script>
@@ -39,7 +47,15 @@
                         "desc": "It is also made with Wordpress and yes, he did used Jquery for it.  This website uses plugins such as Visual Composer (web builder), WPForm and Revolution Slider", 
                         "link": "https://paviliondamansaraheights.com/"
                     }
-                ]
+                ],
+                className: "",
+                display: false
+            }
+        },
+        methods: {
+            // eslint-disable-next-line
+            checkClassName(event){
+                alert("Test")
             }
         }
     }
@@ -77,4 +93,45 @@
     .project-card:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
+
+    /* Modal CSS */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .active {
+        display: block;
+    }
+
+    .model-content {
+        background-color: #fefefe;
+        margin: 15% auto; /*15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /*could be more or less depending on screen size */
+    }
+
+    .close {
+        color: black;
+        float: right;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /* Modal CSS ends */
 </style>
