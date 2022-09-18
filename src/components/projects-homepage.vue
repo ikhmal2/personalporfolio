@@ -9,7 +9,9 @@
             <div :class="{active:display}" class="modal">
                 <div class="modal-content">
                     <span @click="display=display=!display" class="close">&times;</span>
-                    <p>Test modal area</p>
+                    <img :src="projects[index].src" v-bind:alt="projects[index].title">
+                    <h3>project[index].title</h3>
+                    <p>projects[index].desc</p>
                 </div>
             </div>
             <!-- Modal popup ends-->
