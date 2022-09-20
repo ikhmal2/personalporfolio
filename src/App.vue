@@ -26,8 +26,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 </style>
