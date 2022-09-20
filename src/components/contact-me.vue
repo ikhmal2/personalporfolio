@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Get In Touch</h2>
         <div class="emailForm">
             <p class="copy">
@@ -12,6 +12,7 @@
             </a>
         </div>
     </div>
+    <div class="spacer"></div>
 </template>
 
 <script setup>
@@ -19,8 +20,6 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
-
     .contact {
         max-width: 343px;
         max-height: 166px;  
@@ -58,5 +57,9 @@
         color: white;
         border: none;
         margin: 0 auto;
+    }
+
+    .spacer {
+        height: 35px;
     }
 </style>
