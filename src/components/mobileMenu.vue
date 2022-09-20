@@ -8,16 +8,16 @@
 
                 <ul class="nav-menu" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">Projects</a>
+                        <a href="#projects" class="nav-link active">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Resume</a>
+                        <a href="https://drive.google.com/file/d/1gEnMRZe3w5mp-OosZ9iIWLA8uvq2cjXE/view?usp=sharing" target="_blank" class="nav-link">Resume</a>
                     </li>
                 </ul>
                 <div class="hamburger" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
@@ -41,9 +41,7 @@ export default {
 </script>
 
 <style scoped>
-    /* CSS reset */
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-    
+    /* CSS reset */    
     * {
         margin: 0;
         padding: 0;
@@ -64,8 +62,14 @@ export default {
     }
     /* CSS reset ends */
 
+    .nav {
+        top: 0;
+        position: sticky;
+        background: white;
+    }
+
     .nav-logo img {
-        max-width: 4.375rem;
+        max-width: 3.375rem;
         position: absolute;
         top: 5px;
         left: 10px;
