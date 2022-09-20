@@ -1,5 +1,5 @@
 <template>
-    <div class="about-container">
+    <div class="about-container" id="about">
         <h2>About Me</h2>
         <p>
             <i>Ikhmal Fahmi</i><br><br>is a
@@ -27,6 +27,7 @@
         <p>
             <span class="ps">P.S oh btw he's Instagram is private he's a bit of a shy person but he will still check his DMs....</span>
         </p>
+        <img src="../assets/Point-removebg-preview.png" alt="" id="point-image">
     </div>
 </template>
 
@@ -35,8 +36,6 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
-
     .about-container {
         border-radius: 34px;
         background: #FAF9F6;
@@ -68,5 +67,10 @@
         font-weight: 300;
         font-size: 0.6rem;
         font-style: italic;
+    }
+
+    #point-image {
+        max-width: 69%;
+        padding-left: 66px;
     }
 </style>
