@@ -21,16 +21,9 @@ Figma: https://www.figma.com/file/h7D6JNCjGpZ4Wxy4dlu3xe/personal-portfolio?node
 ### TODO or Continue Doing List
 <ol>
     <li>
-        will try to fix importing and accessing data from json file
+        Make project dropdown drop one project per click not all of them at once
+    </li>
+    <li>
+        finish up CSS for desktop
     </li>
 </ol>
-
-```
-<ul class="projects-list">
-    <li class="project-item" :for="(project, index) in projectData" :key="index">
-        <div class="project-card">
-            <h2>{{ project.title }}</h2>
-        </div>
-    </li>
-</ul>
-```
