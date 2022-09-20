@@ -37,8 +37,6 @@
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
-
     .intro-section {
         display: block;
         margin: 0 auto;
@@ -75,5 +73,11 @@
     .socialItem span a {
         text-decoration: none;
         color: #594A4E;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .intro-section {
+            width: unset;
+        }
     }
 </style>
