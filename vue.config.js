@@ -1,3 +1,3 @@
-module.export = {
-  publicPath: '/personalporfolio'
-}
+module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "/personalporfolio/" : "/",
+};
