@@ -76,7 +76,7 @@
 
     @media only screen and (min-width: 1200px) {
         .about-container {
-            width: 60%;
+            width: 53%;
             margin: 0 auto;
         }
     }
