@@ -1,6 +1,6 @@
 <template>
-    <div class="about-container" id="about">
-        <h2>About Me</h2>
+    <div class="about-container">
+        <h2 id="about">About Me</h2>
         <p>
             <i>Ikhmal Fahmi</i><br><br>is a
             Front-End Developer Jr. at Dentsu Isobar, MY. He is a graduate with a Diploma in Computer Science. He joined the industry in Jan 2022 .
@@ -72,5 +72,12 @@
     #point-image {
         max-width: 69%;
         padding-left: 66px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .about-container {
+            width: 60%;
+            margin: 0 auto;
+        }
     }
 </style>

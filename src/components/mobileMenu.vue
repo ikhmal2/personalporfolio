@@ -147,6 +147,7 @@ export default {
         top: 0;
         left: 0;
         padding: 5px;
+        max-width: 5rem;
         }
 
         .navbar {

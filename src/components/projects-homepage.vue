@@ -126,4 +126,22 @@
         font-weight: 400;
     }
     /* Modal CSS ends */
+
+    @media only screen and (min-width: 1200px) {
+        .projects-list {
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+        .project-title {
+            display: table;
+            margin: 0 auto;
+            padding: 30px 15px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 </style>
