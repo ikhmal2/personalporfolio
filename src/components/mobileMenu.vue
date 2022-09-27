@@ -135,10 +135,6 @@ export default {
         color: #4D4141;
     }
 
-    .nav-link:hover {
-        color: #482ff7;
-    }
-
     @media only screen and (min-width: 1200px) {
 
         .nav-logo img {
@@ -187,6 +183,27 @@ export default {
 
         .nav-item {
             margin-left: 5rem;
+            display: inline-block;
+            position: relative;
+            color: #4D4141;
+        }
+
+        .nav-item:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .nav-item:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
         }
 
         .nav-link {
@@ -194,9 +211,5 @@ export default {
             font-weight: 400;
             color: #25232D;
         }
-
-        .nav-link:hover {
-            color: #482ff7;
-        } 
     }
 </style>
