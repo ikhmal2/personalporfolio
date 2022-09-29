@@ -1,7 +1,20 @@
 <template>
     <div class="about-container">
         <h2 id="about">About Me</h2>
+
         <p>
+            My name is Ikhmal Fahmi and I graduated with a Diploma in Computer Science. I've entered the industry in January 2022
+            and currently working as a Jr. Front-End Developer at Dentsu Isobar, MY.
+            <br><br>
+            I've experience in web development languages such as HTML, CSS, JavaScript, PHP and also some Python, Java and C++ along the way during my studies period. I see
+            myself as a relentless problem-solver, and I'm always looking for new challenges.
+            <br><br>
+            I would love to work with someone who are experience and can guide me more one the development field whether it's a
+            mobile or web based application because I want to learn new thing for my career and keep growing in the future. I enjoy
+            my free time by traveling for adventures, and also watch lots of Youtube videos.
+        </p>
+
+        <!-- <p>
             <i>Ikhmal Fahmi</i><br><br>is a
             Front-End Developer Jr. at Dentsu Isobar, MY. He is a graduate with a Diploma in Computer Science. He joined the industry in Jan 2022 .
         </p>
@@ -26,7 +39,7 @@
 
         <p>
             <span class="ps">P.S oh btw he's Instagram is private he's a bit of a shy person but he will still check his DMs....</span>
-        </p>
+        </p> -->
         <img src="../assets/Point-removebg-preview.png" alt="" id="point-image">
     </div>
 </template>
@@ -56,6 +69,7 @@
         font-weight: 400;
         font-size: 0.8rem;
         text-align: justify;
+        margin: 0;
     }
 
     .ig {
@@ -78,6 +92,10 @@
         .about-container {
             width: 53%;
             margin: 0 auto;
+        }
+
+        .about-container p {
+            padding: 0 111px;
         }
     }
 </style>
