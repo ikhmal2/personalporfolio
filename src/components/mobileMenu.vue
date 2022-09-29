@@ -17,7 +17,7 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://drive.google.com/file/d/1gEnMRZe3w5mp-OosZ9iIWLA8uvq2cjXE/view?usp=sharing" target="_blank" class="nav-link">Resume</a>
+                        <a href="https://drive.google.com/file/d/1DxXPnlCJh9UjpwG-t8CRt3LfRopZKePD/view?usp=sharing" target="_blank" class="nav-link">Resume</a>
                     </li>
                 </ul>
                 <div class="hamburger" :class="{active:displayMenu}" @click="displayMenu=displayMenu=!displayMenu">
