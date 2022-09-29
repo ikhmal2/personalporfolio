@@ -6,7 +6,7 @@
                 <img :src="projects[index].src" v-bind:alt="projects[index].title">
             </div>
             <!-- Modal popup starts -->
-            <div :class="{active:display}" class="modal">
+            <div v-bind:id="project.title" :class="{active:display}" class="modal">
                 <div class="modal-content">
                     <h3 class="project-name"><a :href="project.link" target="_blank">{{ project.title }}</a></h3>
                     <p class="project-desc">{{ project.desc }}</p>                   
@@ -48,7 +48,8 @@
                         "link": "https://paviliondamansaraheights.com/"
                     }
                 ],
-                display: false
+                display: false,
+                name: false
             }
         },
         methods: {
@@ -82,7 +83,7 @@
     }
 
     .project-card img {
-        width: 396px;
+        width: 100%;
         height: 170px;
     }
 
@@ -103,7 +104,25 @@
         transition-timing-function: ease;
     }
 
-    .modal.active {
+    div[id='My Portfolio'].modal.active {
+        height: 240px;
+        transition: height 0.5s;
+        transition-timing-function: ease;
+    }
+
+    div[id='AmbankSpot Malaysia'].modal.active {
+        height: 240px;
+        transition: height 0.5s;
+        transition-timing-function: ease;
+    }
+
+    div[id='Honda Malaysia'].modal.active {
+        height: 240px;
+        transition: height 0.5s;
+        transition-timing-function: ease;
+    }
+
+    div[id='Pavilion Damansara Heights'].modal.active {
         height: 240px;
         transition: height 0.5s;
         transition-timing-function: ease;
