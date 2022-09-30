@@ -1,45 +1,18 @@
 <template>
     <div class="about-container">
         <h2 id="about">About Me</h2>
-
         <p>
-            My name is Ikhmal Fahmi and I graduated with a Diploma in Computer Science. I've entered the industry in January 2022
-            and currently working as a Jr. Front-End Developer at Dentsu Isobar, MY.
+            My name is Ikhmal Fahmi and I graduated with a Diploma in Computer Science. I entered the industry in January 2022 and
+            currently working as a Jr. Front-End Developer at Dentsu Isobar, MY.
             <br><br>
-            I've experience in web development languages such as HTML, CSS, JavaScript, PHP and also some Python, Java and C++ along the way during my studies period. I see
-            myself as a relentless problem-solver, and I'm always looking for new challenges.
+            I've experience in web development languages such as HTML, CSS, JavaScript, PHP, and also some Python, Java, and C++
+            along the way during my studies period. I see myself as a relentless problem-solver, and I'm always looking for new
+            challenges.
             <br><br>
-            I would love to work with someone who are experience and can guide me more one the development field whether it's a
-            mobile or web based application because I want to learn new thing for my career and keep growing in the future. I enjoy
-            my free time by traveling for adventures, and also watch lots of Youtube videos.
+            I would love to work with someone who is experienced and can guide me more in the development field whether it's a
+            mobile or web-based application because I want to learn new things for my career and keep growing for the future. I
+            enjoy my free time by traveling for adventures, and also watch a lot of Youtube videos.
         </p>
-
-        <!-- <p>
-            <i>Ikhmal Fahmi</i><br><br>is a
-            Front-End Developer Jr. at Dentsu Isobar, MY. He is a graduate with a Diploma in Computer Science. He joined the industry in Jan 2022 .
-        </p>
-
-        <p>
-            Ikhmal shares his experience in web development and also some Python, Java and C++ along the way during his
-            studies.
-        </p>
-
-        <p>
-            He does not have much to show because most he is still new and thus that's what we call a junior!
-        </p>
-
-        <p>
-            He spends his free time by traveling for adventures, and also watch Youtube a lot but he does not have a Netflix account though.
-        </p>
-
-        <p>
-            He would love to work with much senior developers in order to learn new thing for his career.
-            Say hi to him on Instagram <span class="ig">@ikhmalloy</span>
-        </p>
-
-        <p>
-            <span class="ps">P.S oh btw he's Instagram is private he's a bit of a shy person but he will still check his DMs....</span>
-        </p> -->
         <img src="../assets/Point-removebg-preview.png" alt="" id="point-image">
     </div>
 </template>
@@ -70,17 +43,6 @@
         font-size: 0.8rem;
         text-align: justify;
         margin: 0;
-    }
-
-    .ig {
-        font-weight: 500;
-        text-decoration: underline;
-    }
-
-    .ps {
-        font-weight: 300;
-        font-size: 0.6rem;
-        font-style: italic;
     }
 
     #point-image {
