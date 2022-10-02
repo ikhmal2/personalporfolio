@@ -104,25 +104,7 @@
         transition-timing-function: ease;
     }
 
-    div[id='My Portfolio'].modal.active {
-        height: 240px;
-        transition: height 0.5s;
-        transition-timing-function: ease;
-    }
-
-    div[id='AmbankSpot Malaysia'].modal.active {
-        height: 240px;
-        transition: height 0.5s;
-        transition-timing-function: ease;
-    }
-
-    div[id='Honda Malaysia'].modal.active {
-        height: 240px;
-        transition: height 0.5s;
-        transition-timing-function: ease;
-    }
-
-    div[id='Pavilion Damansara Heights'].modal.active {
+    .modal.active {
         height: 240px;
         transition: height 0.5s;
         transition-timing-function: ease;
