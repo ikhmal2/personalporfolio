@@ -53,7 +53,7 @@
             <div :class="{active:display3}" class="modal">
                 <div class="modal-content">
                     <h3 class="project-name">
-                        <a href="https://www.honda.com.my" target="_blank"></a>
+                        <a href="https://www.honda.com.my" target="_blank">Honda Malaysia</a>
                     </h3>
                     <p class="project-desc">
                         The website is made with Laravel eventhough his seniors made it, Ikhmal still updates the site when there're new promotions or campaign comes out
