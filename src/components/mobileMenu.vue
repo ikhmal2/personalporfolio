@@ -111,7 +111,7 @@ export default {
     .nav-menu {
         position: fixed;
         right: -100%;
-        top: 5rem;
+        top: 3.8rem;
         flex-direction: column;
         background-color: #FAF9F6;
         width: 100%;
