@@ -1,18 +1,87 @@
 <template>
     <span class="project-title" id="projects">Projects</span>
+
+    <!-- project section without list rendering -->
     <ul class="projects-list">
-        <li class="project-item" v-for="(project, index) in projects" :key="index">
-            <div @click="displayModal" class="project-card">
-                <img :src="projects[index].src" v-bind:alt="projects[index].title">
+        <li class="project-item">
+            <div @click="displayModal1" class="project-card">
+                <img src="../assets/portfolio.png" alt="Personal Portfolio">
             </div>
             <!-- Modal popup starts -->
-            <div v-bind:id="project.title" :class="{active:display}" class="modal">
+            <div :class="{active:display1}" class="modal">
                 <div class="modal-content">
-                    <h3 class="project-name"><a :href="project.link" target="_blank">{{ project.title }}</a></h3>
-                    <p class="project-desc">{{ project.desc }}</p>                   
+                    <h3 class="project-name">
+                        <a href="#">My Portfolio</a>
+                    </h3>
+                    <p class="project-desc">
+                        This portfolio is made with Vue.js and Ikhmal used Figma to design it. He planned to use Bootstrap for his CSS but there're not a lot of components in here so he decided to just use vanilla css instead
+                    </p>
                 </div>
             </div>
-            <!-- Modal popup ends-->
+            <!-- Modal popup ends -->
+        </li>
+    </ul>
+
+    <!-- project section without list rendering -->
+    <ul class="projects-list">
+        <li class="project-item">
+            <div @click="displayModal2" class="project-card">
+                <img src="../assets/ambankspot.png" alt="Ambankspot Malaysia">
+            </div>
+            <!-- Modal popup starts -->
+            <div :class="{active:display2}" class="modal">
+                <div class="modal-content">
+                    <h3 class="project-name">
+                        <a href="https://ambankspot.com/" target="_blank">AmbankSpot Malaysia</a>
+                    </h3>
+                    <p class="project-desc">
+                        This website is made with Wordpress with a custom theme and custom plugin installed for it. He also use a popular web builder plugin called Elementor and used jQuery as his goto library. <i>(yea i know its old but its easier for beginners to learn right?)</i>
+                    </p>
+                </div>
+            </div>
+            <!-- Modal popup ends -->
+        </li>
+    </ul>
+
+    <!-- project section without list rendering -->
+    <ul class="projects-list">
+        <li class="project-item">
+            <div @click="displayModal3" class="project-card">
+                <img src="../assets/honda.png" alt="Honda Malaysia">
+            </div>
+            <!-- Modal popup starts -->
+            <div :class="{active:display3}" class="modal">
+                <div class="modal-content">
+                    <h3 class="project-name">
+                        <a href="https://www.honda.com.my" target="_blank"></a>
+                    </h3>
+                    <p class="project-desc">
+                        The website is made with Laravel eventhough his seniors made it, Ikhmal still updates the site when there're new promotions or campaign comes out
+                    </p>
+                </div>
+            </div>
+            <!-- Modal popup ends -->
+        </li>
+    </ul>
+
+    <!-- project section without list rendering -->
+    <ul class="projects-list">
+        <li class="project-item">
+            <div @click="displayModal4" class="project-card">
+                <img src="../assets/pdh.jpg" alt="Pavilion Damansara Height">
+            </div>
+            <!-- Modal popup starts -->
+            <div :class="{active:display4}" class="modal">
+                <div class="modal-content">
+                    <h3 class="project-name">
+                        <a href="https://paviliondamansaraheights.com/" target="_blank">Pavilion Damansara Heights</a>
+                    </h3>
+                    <p class="project-desc">
+                        It is also made with Wordpress and yes, he did used some jQuery for it. This website uses plugins such as Visual Composer (web builder), WPForm and Revolution Slider
+                    </p>
+                </div>
+            </div>
+            <!-- Modal popup ends -->
         </li>
     </ul>
 </template>
@@ -49,12 +118,27 @@
                     }
                 ],
                 display: false,
-                name: false
+                display1: false,
+                display2: false,
+                display3: false,
+                display4: false
             }
         },
         methods: {
             displayModal() {
                 this.display = !this.display;
+            },
+            displayModal1() {
+                this.display1 = !this.display1;
+            },
+            displayModal2() {
+                this.display2 = !this.display2;
+            },
+            displayModal3() {
+                this.display3 = !this.display3;
+            },
+            displayModal4() {
+                this.display4 = !this.display4;
             }
         }
     }
