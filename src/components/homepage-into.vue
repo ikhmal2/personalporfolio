@@ -28,7 +28,7 @@
             return {
                 socialCopy: [
                     {copy: 'GH', href: 'https://github.com/ikhmal2'},
-                    {copy: 'IG', href: 'https://www.instagram.com/ikhmalloy/?hl=en'},
+                    {copy: 'RE', href: 'https://drive.google.com/file/d/1DxXPnlCJh9UjpwG-t8CRt3LfRopZKePD/view'},
                     {copy: 'LI', href: 'https://www.linkedin.com/in/ikhmal-fahmi-6173031a8/'}
                 ]
             }
