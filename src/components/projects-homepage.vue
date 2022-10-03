@@ -14,7 +14,7 @@
                         <a href="#">My Portfolio</a>
                     </h3>
                     <p class="project-desc">
-                        This portfolio is made with Vue.js and Ikhmal used Figma to design it. He planned to use Bootstrap for his CSS but there're not a lot of components in here so he decided to just use vanilla css instead
+                        My portfolio website is designed with Figma and built with VueJS framework. The design and build was focused on simplicity and performance.
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                         <a href="https://ambankspot.com/" target="_blank">AmbankSpot Malaysia</a>
                     </h3>
                     <p class="project-desc">
-                        This website is made with Wordpress with a custom theme and custom plugin installed for it. He also use a popular web builder plugin called Elementor and used jQuery as his goto library. <i>(yea i know its old but its easier for beginners to learn right?)</i>
+                        A website built for Ambank to show deals for their card users. This website is also used as landing page for campaigns that are running as well. The stack for this website is WordPress, jQuery and vanilla CSS for the frontend. 
                     </p>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                         <a href="https://www.honda.com.my" target="_blank">Honda Malaysia</a>
                     </h3>
                     <p class="project-desc">
-                        The website is made with Laravel eventhough his seniors made it, Ikhmal still updates the site when there're new promotions or campaign comes out
+                        A corporate website for Honda Malaysia used to display information such as price and images of their cars. This website is also used to promote monthly campaigns or announce anything on their behalf regarding their cars or their customers. The stack for this website is Laravel for the backend, jQuery and vanilla CSS for the frontend.
                     </p>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                         <a href="https://paviliondamansaraheights.com/" target="_blank">Pavilion Damansara Heights</a>
                     </h3>
                     <p class="project-desc">
-                        It is also made with Wordpress and yes, he did used some jQuery for it. This website uses plugins such as Visual Composer (web builder), WPForm and Revolution Slider
+                        A website to promote and represent their new mall and residence as well. The website focuses on displaying images to visitors. The stack for this website is WordPress, jQuery library and vanilla CSS.
                     </p>
                 </div>
             </div>
