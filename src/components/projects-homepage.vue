@@ -162,7 +162,7 @@
     }
 
     .modal.active {
-        height: 240px;
+        height: 270px;
         transition: height 0.5s;
         transition-timing-function: ease;
     }
