@@ -13,8 +13,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 # dist folder
+.next
 .next/
-
+/.next/
 # Editor directories and files
 .idea
 .vscode
