@@ -1,4 +1,5 @@
 import Experience from "./experience"
+import Projects from "./projects"
 
 export default function Content() {
 	return (
@@ -27,6 +28,7 @@ export default function Content() {
 					</div>
 				</section>
 				<Experience />
+				<Projects />
 			</main>
 		</>
 	)
